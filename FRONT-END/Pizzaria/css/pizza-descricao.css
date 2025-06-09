@@ -1,0 +1,814 @@
+@font-face {
+    font-family: 'PatuaOne';
+    src: url(../fonts/PatuaOne-Regular.otf);
+}
+
+@font-face {
+    font-family: 'BRCobane';
+    src: url(../fonts/BR\ Cobane\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'BRCobane-light';
+    src: url(../fonts/BR\ Cobane\ Light.otf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: url(../fonts/Inter-Light-BETA.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Thin';
+    src: url(../fonts/Inter-Thin-BETA.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(../fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Jumper';
+    src: url(../fonts/JumperPERSONALUSEONLY-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Jumper-Bold';
+    src: url(../fonts/JumperPERSONALUSEONLY-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: fade1n 1s;
+}
+
+@keyframes fade1n{from{opacity:0}to{opacity:1}}
+
+a {
+    text-decoration: none;
+}
+/* 
+/* body {
+    overflow-x: hidden;
+} */ */
+
+.container {
+    height: fit-content;
+    width: 100%;
+    background-color: #696766;
+}
+
+.box-produto {
+    margin: 50px 50px 0;
+    align-items: center;
+}
+
+.layout {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.a {
+    width: 100%;
+    height: 850px;
+    background-color: rgba(250, 243, 243, 0.62);
+    border-radius: 40px 0px 0px 40px;
+}
+
+.b {
+    width: 80%;
+    height: 850px;
+    background-color: rgba(242, 119, 6, 0.7); /* Use 'rgba' para transparência */
+    border-radius: 0px 40px 40px 0px;
+    background-size: 100vh;
+}
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter';
+}
+
+.logo {
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 10%;
+    margin-left: 60px;
+}
+
+.menu a {
+    color: rgb(34, 31, 31, 94%);
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    align-items: center;
+}
+
+.menu a:hover {
+    color: #696766;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #F48A28;
+    transition: all .3s;
+    justify-content: center;
+}
+
+.menu a:hover::before {
+    width: 100%;
+} 
+
+.menu ul {
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.pizza-img {
+    position: absolute;
+    max-width: auto;
+    max-height: 100%;
+    left: 37%;
+    top: 12%;
+    width: auto;
+    height: auto;
+    transition: transform 0.3s;
+    filter: drop-shadow(35px 35px 40px rgba(29, 29, 29, 0.32));
+}
+
+.pizza-img:hover {
+    transform: scale(1.1);
+}
+
+.text-box {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 90%;
+    width: fit-content;
+}
+
+.text-box h1 {
+    font-family: 'Jumper';
+    letter-spacing: 1px;
+    font-size: 60px;
+    color: #222020;
+    width: fit-content;
+}
+
+.text-box span {
+    color: #f48620;
+    font-family: 'Jumper-Bold';
+}
+
+.p-padrao {
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-size: 20px;
+    width: 40%;
+}
+
+.p-responsivo {
+    display: none;
+}
+
+.divisao {
+    width: 530px;
+    height: 1px;
+    background-color: #222020;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calorias {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    transition: transform 0.3s;
+}
+
+.calorias:hover {
+    transform: scale(1.3);
+}
+
+.calorias img {
+    height: 40px;
+    margin-left: 10px;
+}
+
+.calorias-text {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.calorias-text h3 {
+    font-family: 'Inter-Bold';
+    font-size: 16px;
+}
+
+.calorias-text p {
+    font-size: 15px!important;
+    margin-top: 0px;
+    font-family: 'Inter-Light';
+}
+
+.queijo {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    transition: transform 0.3s;
+}
+
+.queijo:hover {
+    transform: scale(1.3);
+}
+
+.queijo img {
+    height: 45px;
+    margin-left: 50px;
+}
+
+.queijo-text {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.queijo-text h3 {
+    font-family: 'Inter-Bold';
+    font-size: 16px;
+}
+
+.queijo-text p {
+    font-size: 15px!important;
+    margin-top: 0px;
+    font-family: 'Inter-Light';
+}
+
+.button {
+    width: 180px;
+    height: 50px;
+    background-color: #F81616;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25) inset, 10px 10px 40px 0px rgba(255, 0, 0, 0.25);
+    margin-top: 40px;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter-Bold';
+    font-size: 13px;
+}
+
+.add-carrinho {
+    position: absolute;
+    right: 0;
+    background-color: #F81616;
+}
+
+.box-comentarios {
+    display: flex;
+    width: auto;
+    max-width: 100%;
+    height: fit-content;
+    background-color: #F7F7F7;
+    background-size: cover;
+    padding: 10px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.avaliacao {
+    display: block;
+    margin: 10px 90px;
+}
+
+.avaliacao h1 {
+    font-family: 'Inter-Light';
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.avaliacao h1:hover {
+    color: #252524;
+}
+
+.notas {
+    display: flex;
+    align-items: center;
+}
+
+.notas h1 {
+    font-family: 'Inter-Thin'!important;
+    font-size: 60px!important;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.notas span img {
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+.reviews {
+    display: flex;
+    margin-left: 110px;
+    gap: 10px;
+    align-items: center;
+}
+
+.reviews img {
+    height: 25px;
+}
+
+.reviews p {
+    font-family: 'Inter-Light';
+    font-size: 13px;
+}
+
+.avaliacoes-barras .barra-avaliacao {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.barra-avaliacao {
+    transition: transform 0.3s;
+}
+
+.barra-avaliacao:hover {
+    transform: scale(1.3);
+    margin-left: 20px;
+}
+
+.barra-avaliacao img {
+    height: 20px;
+}
+
+h6{
+    font-family: 'Inter-Thin';
+    font-size: 20px;
+    color: #747370;
+}
+
+.barra-5 {
+    width: 200px;
+    height: 2px;
+    background-color: rgba(249, 48, 48, 0.79);
+    margin-left: 10px;
+}
+
+.barra-4 {
+    width: 100px;
+    height: 2px;
+    background-color: rgba(252, 121, 0, 0.71);
+    margin-left: 10px;
+}
+
+.barra-3 {
+    width: 50px;
+    height: 2px;
+    background-color: rgba(240, 18, 18, 0.55);
+    margin-left: 10px;
+}
+
+.barra-2 {
+    width: 28px;
+    height: 2px;
+    background-color: rgba(255, 206, 49, 0.62);
+    margin-left: 10px;
+}
+
+.barra-1 {
+    width: 12px;
+    height: 2px;
+    background-color: rgba(252, 121, 0, 0.88);
+    margin-left: 15px;
+}
+
+.qtd-reviews {
+    width: 30px;
+    height: 20px;
+    background-color: #EDEDED;
+    border-radius: 30%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qtd-reviews p {
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Inter';
+}
+
+.reviews-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.review-1 {
+    width: 400px;
+    height: 200px;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.review-info .perfil {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/perfil_1.png);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.review-2 {
+    width: 400px;
+    height: 200px;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.review-info-2 .perfil-2 {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/perfil_2.png);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.review-info {
+    display: flex;
+    align-items: center;
+}
+
+.review-info h4 {
+    color: #979191;
+    font-family: 'Roboto-Regular';
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.review-info span {
+    font-size: 12px;
+}
+
+.review-info .estrelas img {
+    height: 20px;
+    margin-left: 110px;
+}
+
+.review-info-2 {
+    display: flex;
+    align-items: center;
+}
+
+.review-info-2 h4 {
+    color: #979191;
+    font-family: 'Roboto-Regular';
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.review-info-2 span {
+    font-size: 12px;
+}
+
+.review-info-2 .estrelas img {
+    height: 20px;
+    margin-left: 110px;
+}
+
+.review-comentario p {
+    font-family: 'Roboto-Regular';
+    font-weight: 500;
+    color: #6D6363;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.exibir-mais img {
+    height: 120px;
+    transition: transform 0.3s;
+}
+
+.exibir-mais img:hover {
+    transform: scale(1.2);
+}
+
+/*ESTILOS DE RESPONSIVIDADE*/
+
+@media screen and (min-width: 1500px) and (max-width: 1700px) {
+    .review-2 {
+        display: none;
+    }
+
+    .review-1 {
+        margin-left: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+    .review-2 {
+        display: none;
+    }
+
+    .review-1 {
+        margin-left: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .reviews-box {
+        gap: 75px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        margin-left: 30px;
+    }
+
+    .menu {
+        margin-left: 20px;
+    }
+
+    .text-box {
+        margin-left: 4%;
+        margin-top: 7%;
+    }
+
+    .text-box h1 {
+        font-size: 45px;
+    }
+
+    .p-padrao {
+        display: none;
+    }
+
+    .p-responsivo {
+        display: block;
+        margin-top: 10px;
+        font-family: 'Inter';
+        font-size: 15px;
+        width: 37%;
+    }
+
+    .pizza-img {
+        top: 20%;
+        left: 25%;
+        height: 650px;
+    }
+
+    .divisao {
+        width: 300px;
+    }
+
+    .button {
+        margin-top: 25px;
+        width: 150px;
+        height: 45px;
+    }
+
+    .reviews-box {
+        display: block;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .review-2 {
+        display: none;
+    }
+
+    .exibir-mais img{
+        justify-content: center;
+        margin-left: 140px;
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden ;
+    }
+    .box-produto {
+        margin: 0 auto;
+    }
+    
+    .logo {
+        margin-left: 5px;
+        height: 65px;
+    }
+
+    li.menu {
+        margin-left: 5px;
+    }
+
+    ul.menu-item {
+        font-size: 15px;
+    }
+
+    .text-box {
+        top: 20%;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        /* margin-left: -5px; */
+    }
+
+    .text-box p {
+        width: 90%;
+        margin-left: 5px;
+        font-family: 'Inter';
+        font-size: 15px;
+    }
+
+    .p-padrao {
+        display: none;
+    }
+
+    .p-responsivo {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .divisao {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .info {
+        display: flex;
+        margin-left: 20px;
+        gap: 0px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+    }
+
+    .pizza-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 75%;
+        left: -3%;
+        height: 400px;
+        width: 400px;
+        animation: spin 15s linear infinite;
+    }
+
+    /* @keyframes spin {
+        100%{-webkit-transform: rotate(360deg);}
+    } */
+
+    .a,
+    .b {
+        display: none;
+    }
+
+    .box-comentarios {
+        display: block;
+        margin-top: 250%;
+    }
+
+    .avaliacao {
+        margin: 10px 35px;
+    }
+
+    .avaliacao h1 {
+        font-size: 40px;
+    }
+
+    .notas h1 {
+        font-size: 50px!important;
+    }
+
+    .notas span img {
+        height: 30px;
+    }
+
+    .reviews-box {
+        display: block;
+        align-items: center;
+    }
+
+    .reviews {
+        margin-left: 95px;
+    }
+
+    .review-1 {
+        width: 300px;
+        height: 150px;
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+
+    .review-info {
+        display: inline-flex;
+    }
+
+    .review-info .perfil {
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .review-comentario p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .review-info .estrelas img {
+        margin-left: 30px;
+    }
+
+    .review-2 {
+        display: none;
+    }
+
+    .exibir-mais {
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+}

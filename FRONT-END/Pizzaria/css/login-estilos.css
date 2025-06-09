@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+body {
+    animation:fade1n 1s;
+    background-color: #FF7A00;
+    background-size: cover;
+}
+
+@keyframes fade1n{from{opacity:0}to{opacity:1}}
+
+header {
+    height: fit-content;
+    margin-left: 5%;
+}
+
+header img {
+    margin: 2% auto;
+}
+
+.comida-img {
+    margin-left: 10%;
+    animation: zoomIn 0.8s;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.section-1 {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    top: 0;
+    margin-top: 6%;
+}
+
+.box-login {
+    height: 700px;
+    width: 550px;
+    background-color: #F29D38;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.box-login h1 {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.box-login input {
+    height: 70px;
+    width: 500px;
+    border-radius: 10px;
+    border: solid 2px #BFAEAE;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 5%;
+    color: #3f3c3c;
+    margin-bottom: 2%;
+}
+
+.login-dados h2 {
+    font-family: 'Roboto-Light';
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: -20px;
+    margin-top: 6%;
+}
+
+.login-dados a {
+    font-family: 'Roboto-Light';
+    color: #fff;
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+.button {
+    height: 85px;
+    width: 500px;
+    background-color: #EE3B14;
+    border-radius: 10px;
+    margin-top: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.button {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.criar-conta {
+    color: #fff;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.criar-conta p{
+    font-family: 'Roboto-Light';
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+
+.criar-conta a {
+    font-family: 'Roboto';
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1700px) {
+    header img {
+        height: 150px;
+    }
+
+    .box-login {
+        height: 550px;
+        width: 450px;
+        background-color: #F29D38;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .box-login h1 {
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    .box-login input {
+        height: 60px;
+        width: 400px;
+        margin-top: 6%;
+    }
+
+    .comida-img {
+        margin-left: 10%;
+        height: 550px;
+        width: 700px;
+    }
+
+    .button {
+        height: 65px;
+        width: 400px;
+        margin-top: 13%;
+    }
+    
+    a.button {
+        font-size: 20px;
+    }
+
+    .criar-conta {
+        margin-top: 10%;
+    }
+    
+    .criar-conta p{
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+    
+    .criar-conta a {
+        font-size: 22px;
+    }
+}
+
+/*ESTILOS DE RESPONSIVIDADE*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header img {
+        height: 120px;
+    }
+
+    .box-login {
+        height: 480px;
+        width: 350px;
+        background-color: #F29D38;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        margin-top: 15%;
+    }
+
+    .box-login h1 {
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    .login-dados h2 {
+        font-size: 15px;
+    }
+
+    .box-login input {
+        height: 60px;
+        width: 320px;
+        margin-top: 7%;
+    }
+
+    .comida-img {
+        margin-left: 2%;
+        width: 350px;
+        margin-top: 5%;
+    }
+
+    .button {
+        height: 65px;
+        width: 320px;
+        margin-top: 13%;
+    }
+    
+    a.button {
+        font-size: 20px;
+    }
+
+    .criar-conta {
+        margin-top: 10%;
+    }
+    
+    .criar-conta p{
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+    
+    .criar-conta a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        margin: 10%;
+        margin-left: 1%;
+        height: 150px;
+    }
+    .comida-img {
+        display: none;
+    }
+
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60%;
+    }
+
+    .box-login {
+        justify-content: center;
+        height: 500px;
+        width: 350px;
+        margin-left: 10%;
+    }
+
+    .box-login h1 {
+        padding-top: 0;
+    }
+
+    .box-login input {
+        width: 300px;
+        height: 50px;
+        margin-top: 8%;
+    }
+
+    .button {
+        width: 300px;
+        height: 70px;
+    }
+}

@@ -1,0 +1,436 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'PatuaOne';
+    src: url(../fonts/PatuaOne-Regular.otf);
+}
+
+@font-face {
+    font-family: 'BRCobane';
+    src: url(../fonts/BR\ Cobane\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BRCobane-light';
+    src: url(../fonts/BR\ Cobane\ Light.otf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Light-BETA.ttf);
+}
+
+body {
+    background-color: rgb(239, 236, 236, 58%);
+    animation:fade1n 1s;
+}
+
+@keyframes fade1n{from{opacity:0}to{opacity:1}}
+
+/*ESTILOS HEADER */
+
+header { 
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(239, 236, 236, 90%);
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 50px;
+    margin-left: 0;
+}
+
+.pesquisa {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+.pesquisa input {
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    background-image: url(../img/lupa.png);
+    background-position: 95%;
+    background-repeat: no-repeat;
+    float: left;
+    border: 1px solid #d3d0d0;
+}
+
+.categoria {
+    list-style: none;
+    display: flex;
+}
+
+.categoria a {
+    color: rgb(34, 31, 31, 94%);
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.categoria a:hover {
+    color: #696766;
+}
+
+.categoria a::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #F48A28;
+    transition: all .3s;
+    justify-content: center;
+}
+
+.categoria a:hover::before {
+    width: 100%;
+} 
+
+.categoria ul {
+    margin: 0 20px;
+    font-size: 25px;
+    font-family: 'Poppins';
+}
+
+/*ESTILOS RESTO DA PÁGINA */
+
+.p-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    width: 75%;
+}
+
+.product-slider-heading {
+    font-family: 'PatuaOne';
+    letter-spacing: 1px;
+    font-size: 40px;
+    /* text-transform: uppercase; */
+    /* color: #313131; */
+    position: relative;
+    margin: 10px 0 20px 0;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 0px 30px;
+    position: relative;
+    max-height: 350px;
+}
+
+.p-img-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+}
+
+.p-img a,
+.p-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.p-img a img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.p-box-text {
+    margin-top: 5px;
+    width: 100%;
+    padding: 15px;
+}
+
+.product-category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-category span {
+    color: #464242;
+    font-size: 1.2rem;
+    margin: 2px 0px;
+    font-family: 'Roboto';
+}
+
+.product-title {
+    color: #333333;
+    font-size: 35px;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    font-family: 'PatuaOne';
+    width: fit-content;
+}
+
+.product-title span {
+    font-size: 20px;
+}
+
+.product-title:hover {
+    color: #111111;
+    opacity: 0.7;
+    transition: all ease 0.3s;
+}
+
+.price-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'BRCobane-light';
+}
+
+.price-buy .p-price {
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: 700;
+}
+
+.price-buy .p-buy-btn {
+    background-color: #F48A28;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 0px 5px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family:'Inter';
+    transition: all ease 0.3s;
+}
+
+.p-buy-btn:hover {
+    transform: scale(1.1);
+}
+
+.p-buy-btn:active {
+    background-image: url(../img/heart-fill.svg);
+}
+
+.menu-lateral {
+    display: flex;
+    position: fixed;
+    /* z-index: 1; */
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%); 
+    margin-left: 2rem;
+}
+
+.menu-lateral li {
+    margin-bottom: 20px;
+    width: fit-content;
+    list-style: none;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.menu-item img {
+    height: 45px;
+}
+
+.menu-item:hover {
+    transform: scale(1.2);
+}
+
+/*ESTILOS RESPONSIVIDADE */
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+    .product-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .categoria ul {
+        font-size: 15px;
+        margin: 0 0;
+    }
+
+    .menu-item img {
+        height: 35px;
+    }
+
+    .categoria a {
+        margin: 10px;
+    }
+
+    .logo {
+        margin-left: -90px;
+        margin-right: 0px;
+    }
+
+    .pesquisa input {
+        width: 280px;
+    }
+
+    .price-buy .p-buy-btn {
+        border-radius: 15px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .price-buy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        font-family: 'BRCobane-light';
+    }
+
+    .product-category span {
+        font-size: 1rem;
+    }
+
+    .product-title {
+        font-size: 25px;
+    }
+
+    .product-title span {
+        font-size: 15px;
+    }
+
+    .price-buy .p-price {
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    .product-box {
+        max-height: 270px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .pesquisa {
+        margin-right: 70px;
+        margin-top: 200px;
+    }
+
+    .categoria ul {
+        font-size: 15px;
+        margin: 0 2px;
+    }
+
+    .menu-item img {
+        height: 25px;
+    }
+
+    .categoria a {
+        margin: 0 5px;
+    }
+
+    .logo {
+        margin-left: -80px;
+        margin-right: 0px;
+        height: 50px;
+    }
+
+    .p-slider {
+        margin: 180px auto;
+    }
+
+    .pesquisa input {
+        border-radius: 10px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .price-buy .p-buy-btn {
+        border-radius: 15px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .price-buy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        font-family: 'BRCobane-light';
+    }
+
+    .product-category span {
+        font-size: 1rem;
+    }
+
+    .product-title {
+        font-size: 30px;
+    }
+
+    .price-buy .p-price {
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    .product-box {
+        max-height: 270px;
+    }
+
+    .product-title span {
+        font-size: 0.6rem;
+    }
+
+    .glider-next, .glider-prev {
+        left: -10px;
+    }
+
+    .menu-lateral {
+        margin-left: 0.2rem;
+    }
+}

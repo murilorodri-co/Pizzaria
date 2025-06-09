@@ -1,0 +1,328 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PatuaOne';
+    src: url(../fonts/PatuaOne-Regular.otf);
+}
+
+@font-face {
+    font-family: 'BRCobane';
+    src: url(../fonts/BR\ Cobane\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'BRCobane-light';
+    src: url(../fonts/BR\ Cobane\ Light.otf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: url(../fonts/Inter-Light-BETA.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Thin';
+    src: url(../fonts/Inter-Thin-BETA.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(../fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Jumper';
+    src: url(../fonts/JumperPERSONALUSEONLY-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Jumper-Bold';
+    src: url(../fonts/JumperPERSONALUSEONLY-Regular.ttf);
+}
+
+body {
+    background-color: #F27706;
+    animation: fade1n 1s;
+}
+
+@keyframes fade1n{from{opacity:0}to{opacity:1}}
+
+.container {
+    margin: 2% 3%;
+}
+
+.perfil-title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.perfil-title img {
+    height: 50px;
+}
+
+.perfil-title h1 {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.section-1 {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-perfil {
+    background-color: rgba(245, 245, 245, 1);
+    height: 830px;
+    width: 700px;
+    border-radius: 50px;
+}
+
+.perfil-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.perfil-img img {
+    border-radius: 50%;
+    height: 150px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.editar-foto {
+    background-color: #F93030;
+    background-image: url(../img/lapis-editar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 120px;
+    margin-left: 110px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.perfil-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.perfil-text h3 {
+    display: block;
+    font-family: 'Roboto-Bold';
+    font-size: 23px;
+}
+
+.perfil-text h3:hover {
+    color: #111111;
+    opacity: 0.9;
+    transition: all ease 0.3s;
+}
+
+.perfil-text span{ 
+    display: block;
+    font-family: 'Roboto-Regular';
+    font-weight: 200;
+    font-size: 15px;
+    color: #6b6565;
+    text-align: center;
+}
+
+.perfil-info {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 13%;
+}
+
+.info {
+    width: 450px;
+    height: 100px;
+    background-color: #ffffff;
+    margin-bottom: 45px;
+    border-radius: 8px;
+    border: 1px solid rgba(242, 119, 6, 0.35);
+    display: flex;
+    align-items: center;
+}
+
+.info:last-child {
+    margin-bottom: 0px;
+}
+
+.logo-info img {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.info-text h5 {
+    color: #585050;
+    font-family: 'Roboto-Regular';
+    font-weight: 200;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.info-text h5:hover {
+    color: #817c79;
+}
+
+.info-text p {
+    font-family: 'Roboto-Regular';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.info-text p:hover {
+    color: #242222;
+    opacity: 0.9;
+    transition: all ease 0.3s;
+}
+
+.info-text span {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.info-text span:hover {
+    color: #333030;
+    transition: all ease 0.3s;
+    opacity: 0.9;
+}
+
+.sair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 300px;
+    height: 65px;
+    border-radius: 15px;
+    background-color: #F01212;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/sair.svg);
+    background-repeat: no-repeat;
+    background-position: 8%;
+    background-size: 35px;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+a  {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter';
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+    .perfil-info {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .perfil-info {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box-perfil {
+        height: 700px;
+    }
+
+    .perfil-info {
+        margin-top: 50%;
+    }
+
+    .perfil-title h1 {
+        font-size: 20px;
+    }
+    
+    .perfil-title img {
+        height: 35px;
+    }
+
+    .box-perfil {
+        margin-top: 5%;
+    }
+
+    .perfil-img img {
+        height: 120px;
+    }
+
+    .editar-foto {
+        margin-top: 95px;
+        margin-left: 90px;
+    }
+
+    .perfil-text h3 {
+        font-size: 20px;
+    }
+
+    .info {
+        width: 300px;
+        height: 65px;
+        margin-bottom: 40px;
+    }
+
+    .info-text h5 {
+        font-size: 13px;
+    }
+
+    .info-text p {
+        font-size: 15px;
+    }
+
+    .button {
+        width: 200px;
+        background-size: 25px;
+    }
+
+    a {
+        font-size: 13px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+body {
+    animation:fade1n 1s;
+    background-color: #FF7A00;
+    background-size: cover;
+}
+
+@keyframes fade1n{from{opacity:0}to{opacity:1}}
+
+header {
+    height: fit-content;
+    margin-left: 5%;
+}
+
+header img {
+    margin: 2% auto;
+}
+
+.comida-img {
+    margin-left: 10%;
+    animation: zoomIn 0.8s;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.section-1 {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    top: 0;
+    margin-top: 6%;
+}
+
+.box-criar_conta {
+    height: 800px;
+    width: 550px;
+    background-color: #F29D38;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-top: -8%;
+}
+
+.box-criar_conta h1 {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.box-criar_conta input {
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+    border: solid 2px #BFAEAE;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 5%;
+    color: #3f3c3c;
+    margin-bottom: 2%;
+}
+
+.conta-dados h2 {
+    font-family: 'Roboto-Light';
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: -20px;
+    margin-top: 3%;
+}
+
+.conta-dados a {
+    font-family: 'Roboto-Light';
+    color: #fff;
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+.button {
+    height: 85px;
+    width: 500px;
+    background-color: #EE3B14;
+    border-radius: 10px;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.button {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.logar {
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.logar p{
+    font-family: 'Roboto-Light';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.logar a {
+    font-family: 'Roboto';
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1700px) {
+    header img {
+        height: 150px;
+    }
+
+    .box-criar_conta {
+        height: 600px;
+        width: 450px;
+        background-color: #F29D38;
+        border-radius: 50px;
+        margin-top: -5%;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .box-criar_conta input {
+        margin-bottom: 4%;
+    }
+
+    .box-criar_conta h1 {
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        margin-top: -2%;
+    }
+
+    .box-criar_conta input {
+        height: 40px;
+        width: 400px;
+        margin-top: 6%;
+    }
+
+    .comida-img {
+        margin-left: 10%;
+        width: 450px;
+    }
+
+    .button {
+        height: 65px;
+        width: 400px;
+        margin-top: 3%;
+    }
+    
+    a.button {
+        font-size: 20px;
+    }
+
+    .criar-conta {
+        margin-top: 6%;
+    }
+    
+    .criar-conta p{
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+    
+    .criar-conta a {
+        font-size: 22px;
+    }
+
+    .conta-dados h2 {
+        margin-top: 0;
+        font-size: 16px;
+    }
+}
+
+/*ESTILOS DE RESPONSIVIDADE*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header img {
+        height: 120px;
+    }
+
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box-criar_conta {
+        height: 570px;
+        width: 400px;
+        background-color: #F29D38;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .box-criar_conta h1 {
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .conta-dados h2 {
+        font-size: 15px;
+        margin-top: 1%;
+    }
+
+    .box-criar_conta input {
+        height: 45px;
+        width: 350px;
+        margin-top: 6%;
+    }
+
+    .comida-img {
+        margin-left: 0%;
+        margin-top: 15%;
+        height: 250px;
+    }
+
+    .button {
+        height: 55px;
+        width: 350px;
+        margin-top: 6%;
+    }
+    
+    a.button {
+        font-size: 20px;
+    }
+
+    .logar p {
+        font-size: 15px;
+        margin-top: -1%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        margin: 10%;
+        margin-left: 1%;
+        height: 120px;
+    }
+    .comida-img {
+        display: none;
+    }
+
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50%;
+    }
+
+    .box-criar_conta {
+        justify-content: center;
+        height: 600px;
+        width: 350px;
+        margin-left: 10%;
+    }
+
+    .box-criar_conta h1 {
+        padding-top: 0;
+    }
+
+    .box-criar_conta h2 {
+        font-size: 13px;
+    }
+
+    .box-criar_conta input {
+        width: 300px;
+        height: 40px;
+        margin-top: 8%;
+    }
+
+    .button {
+        width: 300px;
+        height: 70px;
+        margin-top: 8%;
+    }
+}

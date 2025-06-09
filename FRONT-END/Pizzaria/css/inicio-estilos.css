@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Patua One';
+    src: url(../fonts/PatuaOne-Regular.otf);
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url(../fonts/BR\ Cobane\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+body {
+    background-color: #F57D0E;
+    margin-left: 5%;
+    animation: fade1n 1s;
+}
+
+header {
+    height: fit-content;
+}
+
+@keyframes fade1n{from{opacity:0}to{opacity:1}}
+
+header img {
+    margin: 2% auto;
+}
+
+.section-1 {
+    margin-top: 2vh;
+}
+
+.section-1 h1 {
+    font-family: 'Patua One', serif;
+    color: #fff;
+    font-size: 90px;
+    letter-spacing: 2px;
+}
+
+.section-1 p {
+    font-family: 'BR Cobane';
+    color: #fff;
+    font-size: 45px;
+    margin-top: 1vh;
+}
+
+.section-1 img {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate {
+    animation: zoomIn 1.5s; /* 1.5 segundos é a duração da animação */
+}
+
+.button {
+    background-color: #fff;
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+a.button {
+    text-decoration: none;
+    color: #F27706;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+/*ESTILOS DE RESPONSIVIDADE*/
+
+@media screen and (min-width: 1024px) {
+    header img {
+        height: 150px;
+    }
+
+    .section-1 h1 {
+        font-size: 70px;
+    }
+
+    .section-1 p {
+        font-size: 35px;
+    }
+
+    .section-1 img {
+        height: 650px;
+        max-width: fit-content;
+    }
+
+    .button {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header img {
+        height: 150px;
+    }
+
+    .section-1 h1 {
+        font-size: 60px;
+    }
+
+    .section-1 p {
+        font-size: 30px;
+    }
+
+    .section-1 img {
+        height: 400px;
+        max-width: fit-content;
+        right: 2%;
+        bottom: -5%;
+    }
+
+    .button {
+        width: 250px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header img {
+        height: 150px;
+    }
+
+    .section-1 {
+        margin-top: 5vh;
+    }
+
+    .section-1 h1 {
+        font-size: 45px;
+    }
+    
+    .section-1 p {
+        font-size: 25px;
+    }
+
+    .button {
+        width: 250px;
+        height: 60px;
+        margin-left: 12%;
+        margin-top: 20%;
+    }
+
+    .section-1 img {
+        display: none;
+    }
+}
